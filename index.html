@@ -19,17 +19,46 @@
         <div class="nav-center">
           <div class="nav-header">
             <img src="./images/logo.png" alt="" class="nav-logo" />
-            <button class="nav-btn"><i class="fas fa-bars"></i></button>
+            <button class="nav-btn" onclick="showSidebar()">
+              <i class="fas fa-bars"></i>
+            </button>
           </div>
           <div class="nav-list-container">
             <ul class="nav-list">
-              <li><a href="#home" class="nav-link">Home</a></li>
-              <li><a href="#services" class="nav-link">services</a></li>
-              <li><a href="#about" class="nav-link">about</a></li>
+              <li><a href="#home" class="nav-link scroll-link">Home</a></li>
+              <li>
+                <a href="#services" class="nav-link scroll-link">services</a>
+              </li>
+              <li><a href="#about" class="nav-link scroll-link">about</a></li>
             </ul>
           </div>
         </div>
       </div>
+      <!-- sidebar -->
+      <aside class="sidebar" id="sidebar">
+        <div class="container">
+          <button class="close-btn" id="close-btn" onclick="hideSidebar()">
+            <i class="fas fa-times"></i>
+          </button>
+          <!-- sidebar-links -->
+          <ul class="sidebar-links">
+            <li>
+              <a href="#index" onclick="hideSidebar()">home</a>
+            </li>
+            <li>
+              <a href="#services" onclick="hideSidebar()">service</a>
+            </li>
+            <li>
+              <a href="#about" onclick="hideSidebar()">about</a>
+            </li>
+            <!-- <li>
+            <a href="projects.html">projects</a>
+          </li> -->
+          </ul>
+        </div>
+      </aside>
+
+      <!-- end of sidebar -->
 
       <img
         src="./images/banner.jpg"
@@ -133,9 +162,11 @@
       </div>
       <div class="footer-links-container">
         <ul class="footer-links">
-          <li><a href="#home" class="footer-link">Home</a></li>
-          <li><a href="#services" class="footer-link">services</a></li>
-          <li><a href="#about" class="footer-link">about</a></li>
+          <li><a href="#home" class="footer-link scroll-link">Home</a></li>
+          <li>
+            <a href="#services" class="footer-link scroll-link">services</a>
+          </li>
+          <li><a href="#about" class="footer-link scroll-link">about</a></li>
         </ul>
       </div>
       <p>&copy Jaya's Kitchen. All Rights Reserved <span id="date"></span></p>

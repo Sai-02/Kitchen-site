@@ -398,6 +398,55 @@ About section
     column-gap: 3rem;
   }
 }
+
+/*
+=====================================
+
+Contact section
+
+====================================
+ */
+.contact {
+  margin-top: 34px;
+}
+.contact-center {
+  margin-top: 10px;
+}
+.form {
+  margin-top: 10px;
+  display: grid;
+  row-gap: 1.2rem;
+}
+.form-control {
+  line-height: 2rem;
+  font-size: 1.3rem;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid var(--clr-primary-5);
+  width: 35vw;
+  min-width: 25rem;
+}
+.form-control::placeholder {
+  color: var(--clr-primary-8);
+  letter-spacing: var(--spacing);
+}
+.form-button {
+  background: var(--clr-primary-5);
+  border: none;
+  color: var(--clr-white);
+  line-height: 2rem;
+  width: 30%;
+  max-width: 100px;
+  transition: var(--transition);
+  font-size: 1.2rem;
+}
+.form-button:hover {
+  color: var(--clr-primary-1);
+}
+.message {
+  height: 150px;
+}
+
 /* 
 ===============================
 

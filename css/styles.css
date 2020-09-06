@@ -416,6 +416,7 @@ Contact section
   margin-top: 10px;
   display: grid;
   row-gap: 1.2rem;
+  overflow: hidden;
 }
 .form-control {
   line-height: 2rem;
@@ -507,4 +508,9 @@ footer
   text-align: center;
   text-transform: capitalize;
   padding-bottom: 6px;
+}
+@media screen and (max-width: 480px) {
+  .footer-link {
+    font-size: 1rem;
+  }
 }

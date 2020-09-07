@@ -12,6 +12,15 @@ function hideSidebar() {
 function showSidebar() {
   document.getElementById("sidebar").style.display = "block";
 }
+function askSend(){
+  let a=window;
+  a=confirm('Are you sure you want to send message');
+  if(a){
+    alert("Message Sent!");
+    
+  }
+  
+}
 
 //extra code
 // const navbar = document.querySelector("#nav");
